@@ -241,7 +241,7 @@ app = App()
 s3_storescp_stack = S3StoreSCPStack(
     app, 
     cfg.APP_NAME, 
-    description=cfg.CFN_STACK_DESCRIPTION, 
+    description=cfg.CFN_STACK_DESCRIPTION + '(S09356)', 
     env={'region':cfg.DEPLOY_REGION}
     
     # If you don't specify 'env', this stack will be environment-agnostic.
